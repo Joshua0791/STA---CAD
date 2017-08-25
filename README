@@ -1,0 +1,29 @@
+EE5301 CAD MINI PROJECT 
+
+Author: Sachin Joshua
+Email : ravin038@umn.edu
+Studend ID : 5304657
+
+The zip file consists of 
+
+1)The main program called "cad_final.cpp" 
+2)The binary executable file called "cad.bin"
+3)Phase one excepected fanin/fanout file called "netlist_op"
+4)Phase one excepected LUT file called "lookup_op"
+5)Sample output for phase two - "c432_output" "b15_output" and so on
+
+Description:
+The main program cad_final.cpp is the complete program by itslelf. It has all the subparts like netlist parsing, LUT pasing, delay calculations and more written as function inside the same file. Two classes have been used to implement nodes and LUT. The inputs to the main are nldm file, netist, file to write nldm info in, file to write netlist info into,for example arguements are ( nldm c432 lookup_op netlist_op ) where c432 is the nelist. This can be chnaged according to the input needed.
+
+Procedure:
+1)The *cpp can be complied on LINUX using the command line as follows:
+	"g++ cad_final.cpp -std=c++0x -o cad.bin"
+
+2)The binary file is run by passing the required arguements given above:
+	"./cad.bin nldm b15 lookup_op netlist_op > slew_LUT.txt"
+
+3)The outputs can be checked in the slew_LUT.txt file. The output displays the max delay(circuit delay), load cap , arrival time, slew and slack of every node. At the end of the file, it shows the critical path the data follow from INP to OUTP.
+
+Please feel free to mail me if you have any questions
+
+
